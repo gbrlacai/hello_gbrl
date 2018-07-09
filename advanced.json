@@ -12,7 +12,7 @@
        "type":"DOCKER"
     },
     "uris":  [
-        "file:///mnt/share/dcosshare2/docker.tar.gz"
+        "file:///mnt/share/dcosshare/docker.tar.gz"
     ],
     "acceptedResourceRoles":["slave_public"],
     "force_pull_image":true,
