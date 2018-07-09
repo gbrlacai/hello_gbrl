@@ -1,0 +1,13 @@
+{  
+   "id":"simple-docker",
+   "container":{  
+      "docker":{  
+         "image":"gabrielacai/hello_gbrl"
+      },
+      "type":"DOCKER"
+   },
+   "acceptedResourceRoles":["slave_public"],
+   "cpus":1,
+   "mem":32.0,
+   "instances":1
+}

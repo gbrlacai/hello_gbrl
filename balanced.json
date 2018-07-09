@@ -1,0 +1,23 @@
+{
+    "id": "balanced-docker",
+    "container": {
+      "type": "DOCKER",
+      "docker": {
+        "image":"gabrielacai/hello_gbrl",
+        "network": "BRIDGE",
+        "portMappings": [
+            {"hostPort":80,"containerPort":80,"protocol":"tcp","servicePort": 10000}
+        ],
+        "forcePullImage":true
+      }
+    },
+    "instances": 3,
+    "cpus": 1,
+    "mem": 32,
+    "labels":{
+      "HAPROXY_GROUP":"external",
+      "HAPROXY_0_VHOST":"gbrlaciclusteragent.westeurope.cloudapp.azure.com",
+      "HAPROXY_0_MODE":"http"
+    }
+  }
+  

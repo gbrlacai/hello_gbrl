@@ -1,0 +1,22 @@
+{  
+    "id":"advanced-docker",
+    "container":{  
+       "docker":{  
+          "image":"gabrielacai/advanced",
+          "network":"BRIDGE",
+          "portMappings":[
+              {"hostPort":80,"containerPort":80,"protocol":"tcp"}
+          ],
+          "forcePullImage":true
+       },
+       "type":"DOCKER"
+    },
+    "uris":  [
+        "file:///mnt/share/dcosshare2/docker.tar.gz"
+    ],
+    "acceptedResourceRoles":["slave_public"],
+    "force_pull_image":true,
+    "cpus":1,
+    "mem":32,
+    "instances":1
+ }
